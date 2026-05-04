@@ -1,0 +1,80 @@
+<?php
+/**
+ * @copyright       (c) 2000-2026 XOOPS Project (https://xoops.org)
+ * @license             GNU GPL 2 (https://www.gnu.org/licenses/gpl-2.0.html)
+ * _LANGCODE    he
+ * _CHARSET     UTF-8
+ */
+define('_MI_SYSTEM_NAME', 'מערכת');
+define('_MI_SYSTEM_DESC', 'לניהול הגדרות הליבה של האתר.');
+define('_MI_SYSTEM_BNAME2', 'תפריט משתמש');
+define('_MI_SYSTEM_BNAME3', 'כניסה');
+define('_MI_SYSTEM_BNAME4', 'חפש');
+define('_MI_SYSTEM_BNAME5', 'תוכן ממתין');
+define('_MI_SYSTEM_BNAME6', 'תפריט ראשי');
+define('_MI_SYSTEM_BNAME7', 'מידע על האתר');
+define('_MI_SYSTEM_BNAME8', 'מי מחובר');
+define('_MI_SYSTEM_BNAME9', 'מפרסמים מובילים');
+define('_MI_SYSTEM_BNAME10', 'חברים חדשים');
+define('_MI_SYSTEM_BNAME11', 'תגובות אחרונות');
+define('_MI_SYSTEM_BNAME12', 'אפשרויות התראות');
+define('_MI_SYSTEM_BNAME13', 'ערכות נושא');
+define('_MI_SYSTEM_ADMENU1', 'באנרים');
+define('_MI_SYSTEM_ADMENU2', 'בלוקים');
+define('_MI_SYSTEM_ADMENU3', 'קבוצות');
+define('_MI_SYSTEM_ADMENU5', 'מודולים');
+define('_MI_SYSTEM_ADMENU6', 'העדפות');
+define('_MI_SYSTEM_ADMENU7', 'סמיילים');
+define('_MI_SYSTEM_ADMENU9', 'דרגות משתמש');
+define('_MI_SYSTEM_ADMENU10', 'ערוך משתמש');
+define('_MI_SYSTEM_ADMENU11', 'שלח דוא"ל למשתמשים');
+define('_MI_SYSTEM_ADMENU12', 'חפש משתמשים');
+define('_MI_SYSTEM_ADMENU13', 'תמונות');
+define('_MI_SYSTEM_ADMENU14', 'אוואטרים');
+define('_MI_SYSTEM_ADMENU15', 'תבניות');
+define('_MI_SYSTEM_ADMENU16', 'תגובות');
+define('_MI_SYSTEM_PREFERENCE_BREAK_GENERAL', 'הגדרות כלליות');
+define('_MI_SYSTEM_PREFERENCE_TIPS', 'עזרה מקוונת?');
+define('_MI_SYSTEM_PREFERENCE_TIPS_DSC', 'זה נותן לך טיפים ועזרה מקוונת');
+define('_MI_SYSTEM_PREFERENCE_ICONS', 'סמלים');
+define('_MI_SYSTEM_PREFERENCE_BREADCRUMB', 'פירורי לחם');
+define('_MI_SYSTEM_PREFERENCE_BREAK_ACTIVE', 'קטע פעיל');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_AVATARS', 'אווטארים פעילים');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_BANNERS', 'באנרים פעילים');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_BLOCKSADMIN', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_COMMENTS', 'תגובות פעילות');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_FILEMANAGER', 'מנהל קבצים פעיל');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_GROUPS', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_IMAGES', 'מנהל תמונות פעיל');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_MAILUSERS', 'משתמשי דוא"ל פעילים');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_MODULESADMIN', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_PREFERENCES', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_SMILIES', 'סמיילים פעילים');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_TPLSETS', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_USERRANK', 'דרגות משתמש פעילות');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_USERS', 'משתמשים פעילים');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_MAINTENANCE', 'תחזוקה פעילה');
+define('_MI_SYSTEM_PREFERENCE_BREAK_PAGER', 'מספר שורות להצגה בניהול');
+define('_MI_SYSTEM_PREFERENCE_AVATARS_PAGER', 'מספר אווטארים להצגה בכל עמוד');
+define('_MI_SYSTEM_PREFERENCE_BANNERS_PAGER', 'מספר הבאנרים להצגה בכל עמוד');
+define('_MI_SYSTEM_PREFERENCE_COMMENTS_PAGER', 'מספר ההערות להצגה בכל עמוד');
+define('_MI_SYSTEM_PREFERENCE_GROUPS_PAGER', 'מספר הקבוצות להצגה בכל עמוד');
+define('_MI_SYSTEM_PREFERENCE_IMAGES_PAGER', 'מספר התמונות להצגה בכל עמוד');
+define('_MI_SYSTEM_PREFERENCE_SMILIES_PAGER', 'מספר הסמיילים להצגה בכל עמוד');
+define('_MI_SYSTEM_PREFERENCE_USERRANKS_PAGER', 'מספר הדרגות להצגה בכל עמוד');
+define('_MI_SYSTEM_PREFERENCE_USERS_PAGER', 'מספר משתמשים להצגה בכל עמוד');
+define('_MI_SYSTEM_PREFERENCE_BREAK_EDITOR', 'הגדרות עורך');
+define('_MI_SYSTEM_PREFERENCE_BLOCKS_EDITOR', 'עורך לבלוקים:');
+define('_MI_SYSTEM_PREFERENCE_BLOCKS_EDITOR_DSC', '');
+define('_MI_SYSTEM_PREFERENCE_COMMENTS_EDITOR', 'עורך לתגובות:');
+define('_MI_SYSTEM_PREFERENCE_COMMENTS_EDITOR_DSC', '');
+define('_MI_SYSTEM_PREFERENCE_GENERAL_EDITOR', 'עורך לכל המודולים:');
+define('_MI_SYSTEM_PREFERENCE_GENERAL_EDITOR_DSC', '');
+define('_MI_SYSTEM_PREFERENCE_ANONPOST', '');
+define('_MI_SYSTEM_PREFERENCE_REDIRECT', '');
+define('_MI_SYSTEM_PREFERENCE_JQUERY_THEME', 'ערכת נושא jQuery');
+define('_MI_DEFAULT_NOTIFICATION_METHOD_DISABLE', 'השבת זמנית');
+define('_MI_DEFAULT_NOTIFICATION_METHOD_EMAIL', 'דוא"ל');
+define('_MI_DEFAULT_NOTIFICATION_METHOD_PM', 'הודעה פרטית');
+define('_MI_SYSTEM_MENUS_ACTIVE', 'הפעל מערכת תפריטים');
+define('_MI_SYSTEM_MENUS_ACTIVE_DESC', 'אפשר את מערכת ניהול התפריטים המובנית לניווט באתר');

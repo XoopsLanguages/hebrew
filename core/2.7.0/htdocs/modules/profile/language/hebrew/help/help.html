@@ -1,0 +1,50 @@
+<div class="outer" id="help-template">
+<h1 class="head">עזרה: <a class="ui-corner-all tooltip" href="&lt;{$xoops_url}&gt;/modules/profile/admin/index.php" title="Back to the Administration of Profile"> פרופיל <img alt="Back to the Administration of Profile" src="&lt;{xoAdminIcons 'home.png'}&gt;"/></a></h1>
+ -----תוכן עזרה ---------- 
+<h4 class="odd">תיאור</h4>
+<p class="even">מודול הפרופיל מיועד לניהול שדות פרופיל משתמש מותאמים אישית.</p>
+<h4 class="odd">התקן/הסר התקנה</h4>
+<p>אין צורך באמצעים מיוחדים, עקוב אחר תהליך ההתקנה הסטנדרטי - חלץ את התיקיה /profile לספריית ../modules. התקן את המודול דרך Admin -&gt; מודול מערכת -&gt; מודולים.</p>
+<p>הוראות מפורטות על התקנת מודולים זמינות ב- <a href="https://www.gitbook.com/book/xoops/xoops-operations-guide/" target="_blank" title="XOOPS Operations Manual">מדריך התפעול של XOOPS</a> <br/><br/></p>
+<h4 class="odd">הוראות הפעלה</h4>
+<p class="even">כדי להגדיר מודול זה עליך:</p>
+<ul>
+<li>הגדר את ההעדפות שלך עבור המודול (ראה 'העדפות') ובאופן אופציונלי לחסום הפרופיל אם אתה מתכוון להשתמש בו (ראה 'בלוקים').</li>
+<li>ערוך קטגוריות קיימות או הוסף קטגוריות חדשות.</li>
+<li>ערוך שדות קיימים או הוסף שדות חדשים. כאן תוכל לציין אילו שדות יהיו גלויים באיזו קטגוריה, ואם הם יהיו גלויים במהלך רישום המשתמש.</li>
+<li>הגדר את סדר שלבי הרישום.</li>
+<li>ולבסוף, אתה יכול להגדיר הרשאות לשדות בודדים - אילו ניתנים לעריכה, אילו ניתנים לחיפוש.<br/><br/></li>
+</ul>
+<h4 class="odd">אמצעים נגד דואר זבל</h4>
+<p class="even">כדי למזער רישום דואר זבל, בצע את הפעולות הבאות:</p>
+<ul>
+<li> עבור למודול Protector ב-Admin, עבור אל העדפות, ולאחר מכן בתחתית, באפשרות זו:
+
+            "עצרו את הספאם בפורום"
+            בודק נתוני POST מול שולחי דואר זבל הרשומים במסד הנתונים www.stopforumspam.com. <br/>
+            הגדר אותו ל"חסום את ה-IP (ללא הגבלה)"
+        </li>
+<br/>
+<li> ב-/class/captcha/config.php, ודא שהמצב מוגדר כ"טקסט":<br/><br/>
+<span style="font-style: italic;">     return $config = array(<br/>
+    'disabled' =&gt; false, // השבת CAPTCHA<br/>
+    'mode' =&gt; 'טקסט', // מצב ברירת מחדל, אתה יכול לבחור 'טקסט', 'תמונה', 'recaptcha' (דורש מפתח API)<br/>
+    'name' =&gt; 'xoopscaptcha', // captcha name<br/>
+    'skipmember' =&gt; נכון, // דלג על בדיקת CAPTCHA עבור חברים<br/>
+    'maxattempts' =&gt; 10, // מקסימום ניסיונות עבור כל הפעלה<br/>
+    );</span></li>
+<br/>
+<li> במודול הפרופיל, עבור אל Admin ובשלב הבסיסי הממוקם בכתובת:<br/>
+
+            /modules/profile/admin/step.php?id=1<br/>
+
+            הגדר את "שמור לאחר עצירה" ל"לא"
+        </li>
+<br/><br/>
+<li> בהעדפות פרופיל, הגדר את האפשרות "השתמש ב-Captcha לאחר שלב הרישום השני" ל-"כן" (זו ברירת המחדל)</li>
+<br/>
+<ul>
+<h4 class="odd">הדרכה</h4>
+<p class="even">הדרכה בקרוב.<br/></p>
+ -----תוכן עזרה ---------- 
+</ul></ul></div>
