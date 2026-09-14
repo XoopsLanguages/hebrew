@@ -1,0 +1,165 @@
+<?php
+/**
+ * @copyright       (c) 2000-2026 XOOPS Project (https://xoops.org)
+ * @license             GNU GPL 2 (https://www.gnu.org/licenses/gpl-2.0.html)
+ * _LANGCODE    he
+ * _CHARSET     UTF-8
+ */
+define('_AM_SYSTEM_MODULES_ADMIN', 'ניהול מודולי XOOPS');
+define('_AM_SYSTEM_MODULES_LIST', 'רשימת מודולים');
+define('_AM_SYSTEM_MODULES_TOINSTALL', 'התקן מודול');
+define('_AM_SYSTEM_MODULES_VALIDATE', 'אמת שינויים');
+define('_AM_SYSTEM_MODULES_SUBMITRES', 'שלח תוצאה');
+define('_AM_SYSTEM_MODULES_RUSUREINS', 'לחץ על הכפתור למטה כדי להתקין מודול זה');
+define('_AM_SYSTEM_MODULES_RUSUREUNINS', 'האם אתה בטוח שברצונך להסיר מודול זה?');
+define('_AM_SYSTEM_MODULES_RUSUREUPD', 'לחץ על הכפתור למטה כדי לעדכן מודול זה');
+define('_AM_SYSTEM_MODULES_BTOMADMIN', 'ניהול מודולי XOOPS');
+define('_AM_SYSTEM_MODULES_INSTALLING', 'מתקין ');
+define('_AM_SYSTEM_MODULES_DEACTIVATE', 'השבת ');
+define('_AM_SYSTEM_MODULES_ACTIVATE', 'הפעל ');
+define('_AM_SYSTEM_MODULES_UPDATING', 'מעדכן ');
+define('_AM_SYSTEM_MODULES_INSTALL', 'התקן');
+define('_AM_SYSTEM_MODULES_UNINSTALL', 'הסר התקנה');
+define('_AM_SYSTEM_MODULES_UPDATE', 'עדכון');
+define('_AM_SYSTEM_MODULES_VIEWLARGE', 'תצוגה גדולה');
+define('_AM_SYSTEM_MODULES_VIEWLINE', 'תצוגת שורה');
+define('_AM_SYSTEM_MODULES_FAILINS', 'לא ניתן להתקין את %s.');
+define('_AM_SYSTEM_MODULES_FAILACT', 'לא ניתן להפעיל את %s.');
+define('_AM_SYSTEM_MODULES_FAILDEACT', 'לא ניתן לבטל את %s.');
+define('_AM_SYSTEM_MODULES_FAILUPD', 'לא ניתן לעדכן את %s.');
+define('_AM_SYSTEM_MODULES_FAILUNINS', 'לא ניתן להסיר את %s.');
+define('_AM_SYSTEM_MODULES_FAILORDER', 'לא ניתן לסדר מחדש את %s.');
+define('_AM_SYSTEM_MODULES_FAILWRITE', 'לא ניתן לכתוב לתפריט הראשי.
+נתונים');
+define('_AM_SYSTEM_MODULES_ALEXISTS', 'המודול %s כבר קיים.');
+define('_AM_SYSTEM_MODULES_OKINS', 'מודול %s הותקן בהצלחה.');
+define('_AM_SYSTEM_MODULES_OKACT', 'מודול %s הופעל בהצלחה.');
+define('_AM_SYSTEM_MODULES_OKDEACT', 'מודול %s הושבת בהצלחה.');
+define('_AM_SYSTEM_MODULES_OKUPD', 'מודול %s עודכן בהצלחה.');
+define('_AM_SYSTEM_MODULES_OKUNINS', 'מודול %s הוסר בהצלחה.');
+define('_AM_SYSTEM_MODULES_OKORDER', 'המודול %s שונה בהצלחה.');
+define('_AM_SYSTEM_MODULES_MODULE', 'מודול');
+define('_AM_SYSTEM_MODULES_VERSION', 'גרסה');
+define('_AM_SYSTEM_MODULES_LASTUP', 'עדכון אחרון');
+define('_AM_SYSTEM_MODULES_DEACTIVATED', 'מושבת');
+define('_AM_SYSTEM_MODULES_ACTION', 'פעולה');
+define('_AM_SYSTEM_MODULES_MENU', 'תפריט');
+define('_AM_SYSTEM_MODULES_HIDE', 'הסתר');
+define('_AM_SYSTEM_MODULES_SHOW', 'הצג');
+define('_AM_SYSTEM_MODULES_DUPEN', 'ערך כפול בטבלת המודולים!');
+define('_AM_SYSTEM_MODULES_DEACTED', 'המודול שנבחר הושבת. עכשיו ניתן לבטל את התקנת המודול בבטחה.');
+define('_AM_SYSTEM_MODULES_ACTED', 'המודול שנבחר הופעל!');
+define('_AM_SYSTEM_MODULES_UPDTED', 'המודול שנבחר עודכן!');
+define('_AM_SYSTEM_MODULES_SYSNO', 'מודול המערכת לא ניתן לביטול הפעלה.');
+define('_AM_SYSTEM_MODULES_STRTNO', 'מודול זה מוגדר כדף הפתיחה המוגדר כברירת מחדל. אנא שנה את מודול ההתחלה למה שמתאים להעדפותיך.');
+define('_AM_SYSTEM_MODULES_ORDER', 'סדר');
+define('_AM_SYSTEM_MODULES_ACTIVE', 'פעיל');
+define('_AM_SYSTEM_MODULES_INACTIVE', 'לא פעיל');
+define('_AM_SYSTEM_MODULES_NOTINSTALLED', 'לא מותקן');
+define('_AM_SYSTEM_MODULES_NOCHANGE', 'אין שינוי');
+define('_AM_SYSTEM_MODULES_SUBMIT', 'שלח');
+define('_AM_SYSTEM_MODULES_CANCEL', 'ביטול');
+define('_AM_SYSTEM_MODULES_DBUPDATE', _AM_SYSTEM_DBUPDATED);
+define('_AM_SYSTEM_MODULES_NEWBLKS', 'New Blocks');
+define('_AM_SYSTEM_MODULES_DEPREBLKS', 'בלוקים מיושנים');
+define('_AM_SYSTEM_MODULES_TABLE_RESERVED', '%s הוא שולחן שמור!');
+define('_AM_SYSTEM_MODULES_CREATE_TABLES', 'יוצר טבלאות...');
+define('_AM_SYSTEM_MODULES_TABLE_CREATED', 'נוצרה טבלה %s');
+define('_AM_SYSTEM_MODULES_INSERT_DATA', '&nbsp;&nbsp; נתונים הוכנסו לטבלה %s');
+define('_AM_SYSTEM_MODULES_INSERT_DATA_FAILD', 'לא ניתן היה להוסיף %s למסד הנתונים.');
+define('_AM_SYSTEM_MODULES_INSERT_DATA_DONE', 'נתוני המודול הוכנסו בהצלחה.');
+define('_AM_SYSTEM_MODULES_MODULEID', 'מזהה מודול: %s');
+define('_AM_SYSTEM_MODULES_SQL_FOUND', 'קובץ SQL נמצא בכתובת %s');
+define('_AM_SYSTEM_MODULES_SQL_NOT_FOUND', 'קובץ SQL לא נמצא ב-%s');
+define('_AM_SYSTEM_MODULES_SQL_NOT_CREATE', 'שגיאה: לא ניתן ליצור %s');
+define('_AM_SYSTEM_MODULES_SQL_NOT_VALID', '%s אינו SQL חוקי!');
+define('_AM_SYSTEM_MODULES_GROUP_ID', 'מזהה קבוצה: %s');
+define('_AM_SYSTEM_MODULES_NAME', 'שם:');
+define('_AM_SYSTEM_MODULES_VALUE', 'ערך:');
+define('_AM_SYSTEM_MODULES_TEMPLATES_ADD', 'מוסיף תבניות...');
+define('_AM_SYSTEM_MODULES_TEMPLATES_DELETE', 'מוחק תבניות...');
+define('_AM_SYSTEM_MODULES_TEMPLATES_UPDATE', 'מעדכן תבניות...');
+define('_AM_SYSTEM_MODULES_TEMPLATE_ID', 'מזהה תבנית: %s');
+define('_AM_SYSTEM_MODULES_TEMPLATE_ADD_DATA', 'תבנית %s נוספה למסד הנתונים');
+define('_AM_SYSTEM_MODULES_TEMPLATE_ADD_ERROR', 'שגיאה: לא ניתן היה להכניס תבנית %s למסד הנתונים.');
+define('_AM_SYSTEM_MODULES_TEMPLATE_COMPILED', 'תבנית %s הידור');
+define('_AM_SYSTEM_MODULES_TEMPLATE_COMPILED_FAILED', 'שגיאה: כשל בהידור תבנית %s');
+define('_AM_SYSTEM_MODULES_TEMPLATE_DELETE_DATA', 'תבנית %s נמחקה ממסד הנתונים.');
+define('_AM_SYSTEM_MODULES_TEMPLATE_DELETE_DATA_FAILD', 'שגיאה: לא ניתן למחוק את התבנית %s ממסד הנתונים.');
+define('_AM_SYSTEM_MODULES_TEMPLATE_INSERT_DATA', 'תבנית %s נוספה למסד הנתונים.');
+define('_AM_SYSTEM_MODULES_TEMPLATE_RECOMPILE', 'תבנית %s הידור מחדש');
+define('_AM_SYSTEM_MODULES_TEMPLATE_RECOMPILE_FAILD', 'שגיאה: הידור מחדש של תבנית %s נכשל');
+define('_AM_SYSTEM_MODULES_TEMPLATE_RECOMPILE_ERROR', 'שגיאה: לא ניתן היה להרכיב מחדש את התבנית %s');
+define('_AM_SYSTEM_MODULES_TEMPLATE_DELETE_OLD_ERROR', 'שגיאה: לא ניתן למחוק את התבנית הישנה %s. מבטל את העדכון של הקובץ הזה.');
+define('_AM_SYSTEM_MODULES_TEMPLATE_UPDATE', 'תבנית %s עודכנה.');
+define('_AM_SYSTEM_MODULES_TEMPLATE_UPDATE_ERROR', 'שגיאה: לא ניתן היה לעדכן את תבנית %s.');
+define('_AM_SYSTEM_MODULES_BLOCKS_ADD', 'מוסיף בלוקים...');
+define('_AM_SYSTEM_MODULES_BLOCKS_DELETE', 'מוחק בלוק...');
+define('_AM_SYSTEM_MODULES_BLOCKS_REBUILD', 'בונה מחדש בלוקים...');
+define('_AM_SYSTEM_MODULES_BLOCK_ID', 'מזהה חסימה: %s');
+define('_AM_SYSTEM_MODULES_BLOCK_ACCESS', 'נוספה זכות גישה לחסימה');
+define('_AM_SYSTEM_MODULES_BLOCK_ACCESS_ERROR', 'שגיאה: לא ניתן להוסיף זכות גישה לחסימה');
+define('_AM_SYSTEM_MODULES_BLOCK_ADD', 'בלוק %s נוסף');
+define('_AM_SYSTEM_MODULES_BLOCK_ADD_ERROR', 'שגיאה: לא ניתן להוסיף בלוק %s למסד הנתונים!');
+define('_AM_SYSTEM_MODULES_BLOCK_ADD_ERROR_DATABASE', 'שגיאת מסד נתונים: %s');
+define('_AM_SYSTEM_MODULES_BLOCK_CREATED', 'נוצר בלוק %s');
+define('_AM_SYSTEM_MODULES_BLOCK_DELETE', 'בלוק %s נמחק.');
+define('_AM_SYSTEM_MODULES_BLOCK_DELETE_DATA', 'תבנית חסימה %s נמחקה ממסד הנתונים.');
+define('_AM_SYSTEM_MODULES_BLOCK_DELETE_ERROR', 'שגיאה: לא ניתן למחוק את הבלוק %s');
+define('_AM_SYSTEM_MODULES_BLOCK_DELETE_TEMPLATE_ERROR', 'שגיאה: לא ניתן למחוק את תבנית החסימה %s ממסד הנתונים');
+define('_AM_SYSTEM_MODULES_BLOCK_DEPRECATED', 'תבנית חסימה %s הוצאה משימוש');
+define('_AM_SYSTEM_MODULES_BLOCK_DEPRECATED_ERROR', 'שגיאה: לא ניתן להסיר תבנית בלוק שהוצאה משימוש.');
+define('_AM_SYSTEM_MODULES_BLOCK_UPDATE', 'בלוק %s עודכן.');
+define('_AM_SYSTEM_MODULES_GONFIG_ID', 'מזהה תצורה: %s');
+define('_AM_SYSTEM_MODULES_MODULE_DATA_ADD', 'מוסיף נתוני תצורת מודול...');
+define('_AM_SYSTEM_MODULES_MODULE_DATA_DELETE', 'מוחק אפשרויות תצורת המודול...');
+define('_AM_SYSTEM_MODULES_MODULE_DATA_UPDATE', 'נתוני המודול עודכנו.');
+define('_AM_SYSTEM_MODULES_CONFIG_ADD', 'נוספה אפשרות תצורה');
+define('_AM_SYSTEM_MODULES_CONFIG_DATA_ADD', 'Config %s נוספה למסד הנתונים');
+define('_AM_SYSTEM_MODULES_CONFIG_DATA_ADD_ERROR', 'שגיאה: לא ניתן היה להכניס את התצורה %s למסד הנתונים.');
+define('_AM_SYSTEM_MODULES_GONFIG_DATA_DELETE', 'נתוני התצורה נמחקו ממסד הנתונים.');
+define('_AM_SYSTEM_MODULES_CONFIG_DATA_DELETE_ERROR', 'שגיאה: לא ניתן למחוק נתוני תצורה ממסד הנתונים');
+define('_AM_SYSTEM_MODULES_GROUP_SETTINGS_ADD', 'מגדיר הרשאות קבוצה...');
+define('_AM_SYSTEM_MODULES_GROUP_PERMS_DELETE_ERROR', 'שגיאה: לא ניתן למחוק את הרשאות הקבוצה');
+define('_AM_SYSTEM_MODULES_GROUP_PERMS_DELETED', 'נמחקו הרשאות הקבוצה');
+define('_AM_SYSTEM_MODULES_ACCESS_ADMIN_ADD', 'נוספה זכות גישת מנהל עבור מזהה קבוצה %s');
+define('_AM_SYSTEM_MODULES_ACCESS_ADMIN_ADD_ERROR', 'שגיאה: לא ניתן להוסיף זכות גישה למנהל עבור מזהה קבוצה %s');
+define('_AM_SYSTEM_MODULES_ACCESS_USER_ADD', 'נוספה זכות גישה למשתמש עבור מזהה קבוצה: %s');
+define('_AM_SYSTEM_MODULES_ACCESS_USER_ADD_ERROR', 'שגיאה: לא ניתן להוסיף זכות גישה למשתמש עבור מזהה קבוצה: %s');
+define('_AM_SYSTEM_MODULES_FAILED_EXECUTE', 'נכשל בביצוע %s');
+define('_AM_SYSTEM_MODULES_FAILED_SUCESS', '%s בוצע בהצלחה.');
+define('_AM_SYSTEM_MODULES_DELETE_ERROR', 'שגיאה: לא ניתן למחוק את %s');
+define('_AM_SYSTEM_MODULES_UPDATE_ERROR', 'שגיאה: לא ניתן לעדכן את %s');
+define('_AM_SYSTEM_MODULES_DELETE_MOD_TABLES', 'מוחק טבלאות מודול...');
+define('_AM_SYSTEM_MODULES_COMMENTS_DELETE', 'מוחק תגובות...');
+define('_AM_SYSTEM_MODULES_COMMENTS_DELETE_ERROR', 'שגיאה: לא ניתן למחוק תגובות');
+define('_AM_SYSTEM_MODULES_COMMENTS_DELETED', 'התגובות נמחקו');
+define('_AM_SYSTEM_MODULES_NOTIFICATIONS_DELETE', 'מוחק התראות...');
+define('_AM_SYSTEM_MODULES_NOTIFICATIONS_DELETE_ERROR', 'שגיאה: לא ניתן למחוק התראות');
+define('_AM_SYSTEM_MODULES_NOTIFICATIONS_DELETED', 'ההתראות נמחקו');
+define('_AM_SYSTEM_MODULES_TABLE_DROPPED', 'טבלה %s ירדה!');
+define('_AM_SYSTEM_MODULES_TABLE_DROPPED_ERROR', 'שגיאה: לא ניתן היה להוריד את הטבלה %s');
+define('_AM_SYSTEM_MODULES_TABLE_DROPPED_FAILDED', 'שגיאה: אסור להוריד את הטבלה %s !');
+define('_AM_SYSTEM_MODULES_CONFIRM_TIPS', '<ul>
+<li>בדוק את כל השינויים לאימות.</li>
+</ul>');
+define('_AM_SYSTEM_MODULES_INSTALL_TESTDATA', 'הוסף נתוני בדיקה');
+define('_AM_SYSTEM_MODULES_INSTALL_MORE', 'התקן מודולים נוספים');
+define('_AM_SYSTEM_MODULES_INSTALL_THISMODULE', 'מנהל המודול הזה');
+define('_AM_SYSTEM_MODULES_FK_DISABLE', 'נכשל בביטול בדיקות מפתח זר');
+define('_AM_SYSTEM_MODULES_FK_ENABLE', 'נכשל בהפעלת בדיקות מפתח זר');
+define('_AM_SYSTEM_MODULES_DROP_FAIL', 'נכשלה הורדת הטבלה: %s');
+define('_AM_SYSTEM_MODULES_DROP_OK', 'טבלה נשמטה: %s');
+
+//2.7.1 backfilled translations
+define('_AM_SYSTEM_MODULES_TIPS', '<ul>
+<li>אם אתה מתקין מודול חדש, זכור להגדיר את העדפות המודול, הבלוקים והרשאות המשתמשים!</li>
+<li>כדי להסתיר מודול בבלוק התפריט הראשי, הגדר את הסדר ל-0.</li>
+<li>מחק קבצי מודול שאינם בשימוש מהשרת שלך כדי למנוע בעיות אבטחה ולשמור על אתר בטוח.</li>
+<li>כדי לשנות את סדר המודולים (שישתקף בתפריט), עליך פשוט לגרור ולשחרר את המודולים למיקום הרצוי.</li>
+</ul>');
+define('_AM_SYSTEM_MODULES_ORDER0', '(0 = הסתר)');
+define('_AM_SYSTEM_MODULES_ERRORSC', 'שגיאות:');
+define('_AM_SYSTEM_MODULES_LISTUPBLKS', 'הבלוקים הבאים יעודכנו.<br>בחר את הבלוקים שתוכנם (תבנית ואפשרויות) עשוי להידרס.<br>');
+//2.7.1
+define('_AM_SYSTEM_MODULES_CONFIG_DATA_INVALID', ' ERROR: Skipped malformed config entry %s. ');

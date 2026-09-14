@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>הוראות התקנה של XOOPS</title>
+<meta content="XOOPS" name="keywords"/>
+<meta content="XOOPS installation guide" name="description"/>
+<style type="text/css">
+        body {
+            font-family:                        Lucida Grande, Verdana, Geneva, Sans-serif;
+            margin:                             0;
+            padding:                            0;
+            font-size:                          13px;
+            color:                              #333;
+            background-color:                   #fff;
+        }
+
+        a {
+            color:                              #3D9DD3;
+            background-color:                   transparent;
+            text-decoration:                    none;
+            font-weight:                        normal;
+        }
+
+        a:visited {
+            color:                              #3D9DD3;
+            background-color:                   transparent;
+            text-decoration:                    none;
+        }
+
+        a:hover {
+            color:                              #3D9DD3;
+            text-decoration:                    none;
+            background-color:                   transparent;
+        }
+
+        .page {
+            background-color:                   #fff;
+            margin:                             10px 30px 0;
+            padding:                            0;
+        }
+
+        .page h1 {
+            background-color:                   transparent;
+            border-bottom:                      1px solid #999;
+            color:                              #000;
+            font-size:                          18px;
+            font-weight:                        bold;
+            margin:                             28px 0 16px 0;
+            padding:                            5px 0 6px 0;
+        }
+
+        .page h2 {
+            background-color:                   transparent;
+            color:                              #000;
+            font-size:                          16px;
+            font-weight:                        bold;
+            margin:                             28px 0 16px 0;
+            padding:                            5px 0 6px 0;
+        }
+
+        .page h3 {
+            background-color:                   transparent;
+            color:                              #000;
+            font-size:                          14px;
+            font-weight:                        bold;
+        }
+
+        .page ul {
+            margin:                             20px 0 15px 0;
+        }
+
+        .page li {
+            margin-bottom:                      9px;
+        }
+
+        .page li p {
+            margin-left:                        0;
+            margin-right:                       0;
+        }
+
+        p {    }
+
+    </style>
+</head>
+<body>
+<div class="page">
+<h1>התקנת XOOPS</h1>
+<h2>התקנה ראשונה</h2>
+<h3>הקדמה:</h3>
+<p>
+<abbr title="eXtensible Object-Oriented Portal System">XOOPS</abbr> הוא קוד פתוח
+        מערכת פרסום אינטרנט מונחה עצמים כתובה ב-PHP. זה כלי אידיאלי עבור
+        פיתוח אתרי קהילה דינמיים קטנים עד גדולים, פורטלים פנים-ארגוניים, פורטלים ארגוניים, בלוגים ועוד ועוד.
+    </p>
+<p>
+        XOOPS משוחרר תחת התנאים של
+        <a href="https://www.gnu.org/licenses/gpl-2.0.html" rel="external">GNU General Public License (GPL)</a>
+        גרסה 2 ומעלה, והוא חופשי לשימוש ולשינוי.
+        ניתן להפיץ אותו מחדש כל עוד אתה מציית לתנאי ההפצה של GPL.
+    </p>
+<h2>דרישות</h2>
+<ul>
+<li>שרת WWW (
+סט תבניות<a href="http://www.apache.org/" rel="external">אפאצ'י</a>, <a href="https://www.nginx.com/" rel="external" s="">NGINX</a>, IIS וכו')</li>
+<li><a href="https://www.php.net/" rel="external">PHP</a> 8.2 ומעלה, מומלץ 8.4+</li>
+<li><a href="https://www.mysql.com/" rel="external">MySQL</a> 5.7 .8 ומעלה, MySQL 8.4.5+ מומלץ</li>
+</ul>
+<h3>לפני ההתקנה</h3>
+<ol>
+<li>הגדר שרת WWW, PHP ושרת מסד נתונים כהלכה.</li>
+<li>הכן מסד נתונים עבור אתר XOOPS שלך.</li>
+<li>הכן חשבון משתמש והעניק למשתמש את הגישה למסד הנתונים.
+לחצן הבחירה</li>
+<li>הפוך את הספריות והקבצים לניתנים לכתיבה: %s</li>
+<li>משיקולי אבטחה, מומלץ מאוד להוציא את שתי הספריות למטה <a href="http://phpsec.org/projects/guide/3.html" rel="external">שורש מסמך</a> ושנה את שמות התיקיות: %s</li>
+<li>צור (אם עדיין לא קיים) והפוך את הספריות לניתנות לכתיבה: %s</li>
+<li>הפעל קובצי Cookie ו-JavaScript של הדפדפן שלך.</li>
+</ol>
+<h2>התקנה מקומית</h2>
+<p>אם אתה מפעיל סביבה מקומית לפיתוח או בדיקה, ודא שיש לך את הסביבה הקודמת
+    דרישות שהתקיימו. ברגע שזה נעשה, העתק את התוכן של <em>htdocs</em> (מתוך XOOPS
+    קובץ הפצה) לנתיב מסמך הבסיס של סביבת האינטרנט שלך. ברגע שהקבצים מועתקים לשם,
+    אתה יכול להתחיל את ההתקנה על ידי הפניית הדפדפן שלך אל "http://<em>yoursite.com</em>". זה יתחיל את תהליך ההתקנה.
+</p>
+<h2>התקנה בפלטפורמה מתארחת</h2>
+<p>אם אתה פועל בסביבה מתארחת, פרק את קבצי ה-XOOPS באופן מקומי או בשרת אם יש לך
+    גישת מעטפת (כלומר SSH). לאחר שתסיים, הקפד להעביר או להעתיק את כל קבצי XOOPS מה- <em>htdocs</em>
+    לספריית האינטרנט הבסיסית שלך (הספק שלך בדרך כלל מספק מיקום זה עם הנחיות).
+    לאחר העתקת הקבצים לשם, אתה יכול להתחיל את ההתקנה על ידי הפניית הדפדפן שלך
+    "http://<em>yoursite.com</em>". זה יתחיל את תהליך ההתקנה.
+</p>
+<h2>המשך ההתקנה</h2>
+<p>פשוט עקוב אחר ההוראות שלב אחר שלב בתוכנית ההתקנה.</p>
+</div>
+</body>
+</html>
